@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Playpen+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf6ee;
+  /* Whimsical warm-tinted scrapbook grid paper texture */
+  background-image: 
+    linear-gradient(rgba(235, 217, 200, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 217, 200, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Playpen Sans', cursive, sans-serif;
+  color: #5c4033;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  gap: 20px;
+  margin: 20px auto;
+  position: relative;
+  background: #fbfbf9;
+  border: 3px solid #5c4033;
+  /* Slightly wavy hand-drawn border radius */
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 30px 24px 35px 24px;
+  box-shadow: 8px 12px 20px rgba(92, 64, 51, 0.12);
+  transform: rotate(1.2deg);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: rotate(0deg) scale(1.01);
+}
+
+/* Scrapbook tape element to hold container down */
+.container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 32px;
+  background-color: rgba(243, 225, 172, 0.6);
+  backdrop-filter: blur(1px);
+  transform: rotate(-3deg);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05);
+  border-left: 3px dashed rgba(220, 200, 150, 0.5);
+  border-right: 3px dashed rgba(220, 200, 150, 0.5);
+  z-index: 10;
+}
+
+/* Polaroid-style photo/gif border */
+.container .tenor-gif-embed {
+  max-width: 220px;
+  width: 100%;
+  border: 2px solid #5c4033;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #eee;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 10px rgba(92, 64, 51, 0.08);
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 2.8rem;
+  color: #4e3629;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(92, 64, 51, 0.05);
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.4rem;
+  color: #8a624a;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Buttons (Doodle Style) */
+.btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn a {
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5c4033;
+  background-color: #fff;
+  padding: 8px 30px;
+  border: 2px solid #5c4033;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; /* Irregular sketch box */
+  box-shadow: 3px 5px 0px #5c4033;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+}
+
+.btn a:hover {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 1px 2px 0px #5c4033;
+  background-color: #fef08a; /* Soft highlighter highlight on hover */
+}
+
+/* Style Yes and WhatsApp links as primary */
+.btn a[href*="yes"], .btn a[href*="whatsapp"] {
+  background-color: #fcf0be;
+}
+
+.btn a[href*="yes"]:hover, .btn a[href*="whatsapp"]:hover {
+  background-color: #fde047;
+}
+
+/* Specific styling for no3.html randomly moving button */
+#move-random {
+  position: relative;
+  z-index: 100;
+}
+
+/* Responsive adjust */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .btn a {
+    font-size: 1.4rem;
+    padding: 6px 20px;
+  }
+}

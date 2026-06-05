@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeash - Thank You! ❤️</title>
+    <link rel="stylesheet" href="./music.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Decorative background sketches -->
+      <div class="doodle-drawing doodle-heart">❤️</div>
+      <div class="doodle-drawing doodle-music">🎵</div>
+
+      <!-- Masking tapes holding the card -->
+      <div class="tape tape-left"></div>
+      <div class="tape tape-right"></div>
+
+      <!-- Polaroid-style Card containing GIF and Player -->
+      <div class="polaroid-card">
+        <div class="polaroid-img-container">
+          <!-- Tenor GIF of Peach Goma dancing happily -->
+          <div
+            class="tenor-gif-embed"
+            data-postid="8391481743589548760"
+            data-share-method="host"
+            data-aspect-ratio="1"
+            data-width="100%"
+          >
+            <a href="https://tenor.com/view/hold-dudu-shake-hand-gif-8391481743589548760">Hold Dudu Shake Hand Sticker</a>
+          </div>
+          <script
+            type="text/javascript"
+            async
+            src="https://tenor.com/embed.js"
+          ></script>
+        </div>
+
+        <h1>something something 💖</h1>
+        <p class="subtitle">love you</p>
+
+        <!-- Music Player Dashboard -->
+        <div class="music-player">
+          <div class="song-title-display" id="song-title">-------------- 🌸 (Track 1)</div>
+          
+          <!-- Animated visualizer bars -->
+          <div class="visualizer">
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+          </div>
+
+          <!-- Controls -->
+          <div class="player-controls">
+            <button class="control-btn prev-btn" id="prev-btn" title="Previous Song">
+              <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+            </button>
+            <button class="control-btn play-pause-btn" id="play-pause-btn" title="Play/Pause">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <button class="control-btn next-btn" id="next-btn" title="Next Song">
+              <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6z"/></svg>
+            </button>
+          </div>
+
+          <!-- Playlist -->
+          <ul class="playlist">
+            <li class="playlist-item active">
+              <span class="playlist-item-num">1</span>
+              <span class="playlist-item-name">-------------- 🌸</span>
+              <span class="playlist-item-status">⏸️</span>
+            </li>
+            <li class="playlist-item">
+              <span class="playlist-item-num">2</span>
+              <span class="playlist-item-name">-------------- 💕</span>
+              <span class="playlist-item-status"></span>
+            </li>
+            <li class="playlist-item">
+              <span class="playlist-item-num">3</span>
+              <span class="playlist-item-name">-------------- ⭐️</span>
+              <span class="playlist-item-status"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+          <h2>Some cute clips... 🎥</h2>
+          <div class="video-container">
+            <video id="video-player" controls>
+              <source src="video/1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-playlist">
+            <button class="video-playlist-item active" data-video="video/1.mp4">Clip 1 🌸</button>
+            <button class="video-playlist-item" data-video="video/2.mp4">Clip 2 💕</button>
+            <button class="video-playlist-item" data-video="video/3.mp4">Clip 3 ⭐️</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Scrap Box -->
+      <div class="scrap-card">
+        <p class="scrap-text">Hehe 😁 pata tha babu jada der nahi rahti gussa❤️</p>
+        <div class="btn-group">
+          <a href="https://api.whatsapp.com/send?phone=9142722049&text=Chalo%20thik%20hai..
+" class="doodle-btn primary">Thik maan gye</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./music.js"></script>
+  </body>
+</html>
