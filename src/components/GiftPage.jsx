@@ -203,7 +203,7 @@ export default function GiftPage() {
                       transition={{ duration: 0.8, delay: 0.6 }}
                       className="text-lg text-purple-200 leading-relaxed"
                     >
-                      Mane ruthi hue ho  par mana nahi na karo dekho kitna cute lag rahe hai flower ke sath, bolti ho na ham kabhi nahi bolte dekho aaj phool ke sath bol rahe hai, Sachi main bahut payar karte hai bas kabhi jata nahi paate wese bhi tumhare siwa hai hi kon jisse 10 min bhi kar sake, oye yesa nahi ki koe hai nahi esliye apse payar hai, apse payar hai esliye koe nahi hai, ab tum toh ho hi motki tumko majak hi lagega. 
+                      Mane ruthi hue ho  par mana nahi na karo dekho kitna cute lag rahe hai flower ke sath, bolti ho na ham kabhi nahi bolte dekho aaj phool ke sath bol rahe hai, Sachi main bahut payar karte hai bas kabhi jata nahi paate wese bhi tumhare siwa hai hi kon jisse 10 min bhi baat kar sake, oye yesa nahi ki koe hai nahi esliye apse payar hai, apse payar hai esliye koe nahi hai, ab tum toh ho hi motki tumko majak hi lagega. 
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0, y: 15 }}
